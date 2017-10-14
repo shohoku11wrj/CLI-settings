@@ -65,6 +65,9 @@ set expandtab
 " paste from system clipboard
 nmap <F2> :set paste<CR>:r !pbpaste<CR>:set nopaste<CR>
 imap <F2> <Esc>:set paste<CR>:r !pbpaste<CR>:set nopaste<CR>
+" Ubuntu
+"nmap <F2> :set paste<CR>:r !xclip -selection clipboard -o<CR>:set nopaste<CR>
+"imap <F2> <Esc>:set paste<CR>:r !xclip -selection clipboard -o<CR>:set nopaste<CR>
 
 " previous buffer
 nmap <C-h> :bprevious<CR>
