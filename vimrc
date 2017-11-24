@@ -36,6 +36,8 @@ set cursorline
 highlight clear CursorLine
 highlight CursorLine gui=underline ctermbg=17
 highlight Pmenu ctermbg=brown gui=bold
+au InsertEnter * silent execute "!echo -en \<esc>[5 q"
+au InsertLeave * silent execute "!echo -en \<esc>[2 q"
 
 " Source a global configuration file if available
 if filereadable("/etc/vim/vimrc.local")
